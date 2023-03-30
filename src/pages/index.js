@@ -2,6 +2,8 @@ import Head from 'next/head'
 import Image from 'next/image'
 import { Inter } from 'next/font/google'
 import NavBar from '../../components/NavBar'
+import { Main } from '../../components/Main'
+import About from '../../components/About'
 
 
 
@@ -16,7 +18,9 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <NavBar />
-      
+      <Main />
+      <About />
+      <Projects />
     </>
   )
 }
