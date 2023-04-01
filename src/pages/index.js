@@ -3,8 +3,11 @@ import Image from 'next/image'
 import { Inter } from 'next/font/google'
 import NavBar from '../../components/NavBar'
 import { Main } from '../../components/Main'
-import About from '../../components/About'
 
+import Projects from '../../components/Projects'
+import Contact from '../../components/Contact'
+import SkillsList from '../../components/SkillsList'
+import AboutMe from '../../components/AboutMe'
 
 
 
@@ -19,8 +22,10 @@ export default function Home() {
       </Head>
       <NavBar />
       <Main />
-      <About />
+      <AboutMe />
+      <SkillsList />
       <Projects />
+      <Contact />
     </>
   )
 }

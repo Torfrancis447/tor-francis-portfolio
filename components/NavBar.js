@@ -39,7 +39,7 @@ const toggleNav= ()=> {
                 Skills{" "}
               </li>
             </Link>
-            <Link href="/">
+            <Link href="#projects">
               <li className="ml-10 text-sm uppercase hover:border-b">
                 {" "}
                 Projects{" "}

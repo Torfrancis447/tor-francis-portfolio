@@ -29,4 +29,8 @@
   button {
     @apply shadow-xl shadow-gray-400 rounded-xl uppercase bg-gradient-to-r from-[#855696] to-[#9612f5] text-white
   }
+
+  html {
+    @apply scroll-smooth;
+  }
 }
