@@ -20,10 +20,11 @@ const AboutMe = () => {
             and BootStrap libraries. In Addition to my technical skills, I have
             strong communication and collaboration skills from six years in a
             retail sales and management environment.
-          </p>
+         
           I am both a detail-oriented and patient individual that's well-versed
           in team collaboration and effective communication.
-          <p className='py-2 text-gray-600'>
+           </p>
+           <p className='py-2 text-gray-600'>
             When I'm not coding, I prefer to research new technologies and spend
             time with my cat. If my cat isn't in the mood, then I tend to go
             exploring the city with friends.
