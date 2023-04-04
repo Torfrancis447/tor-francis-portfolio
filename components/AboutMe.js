@@ -21,18 +21,18 @@ const AboutMe = () => {
             impact on how we interact with technologies.
           </p>
           <p className="py-2 text-gray-600">
-            My Technical Skills Include React, Ruby on Rails, Javascript, HTML,
+            {`My Technical Skills Include React, Ruby on Rails, Javascript, HTML,
             CSS, and SQL. I have built projects with Material UI, Tailwind CSS,
             and BootStrap libraries. In Addition to my technical skills, I have
             strong communication and collaboration skills from six years in a
             retail sales and management environment. I am both a detail-oriented
             and patient individual that's well-versed in team collaboration and
-            effective communication.
+            effective communication.`}
           </p>
           <p className="py-2 text-gray-600">
-            When I'm not coding, I prefer to research new technologies and
+            {`When I'm not coding, I prefer to research new technologies and
             spend time with my cat. If my cat isn't in the mood, then I tend to
-            go exploring the city with friends.
+            go exploring the city with friends.`}
           </p>
           <p className="py-2 text-gray-600 underline cursor-pointer">
             Check out new Projects
