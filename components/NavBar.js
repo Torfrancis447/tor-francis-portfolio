@@ -24,9 +24,10 @@ useEffect(() => {
 const toggleNav= ()=> {
     setNav(!nav)
 }
+
   return (
     <div className={ shadow ? "fixed w-full h-20 shadow-xl z-[100] ease-in duration-300" : "fixed w-full h-20 z-[100] ease-out duration-300"}>
-      <div className="flex justify-between items-center w-full h-full px-2 2xl:px-16">
+      <div className="flex justify-between items-center w-full h-full px-2 2xl:px-16 bg-[#ecf0f3]">
         <Image
           src="/../public/assets/Tor-logo.png"
           alt="/"
@@ -74,12 +75,15 @@ const toggleNav= ()=> {
         'fixed left-0 top-0 lg:w-[35%] sm:w-[60%] md:w-[45%] h-screen bg-[#ecf0f3] p-10 ease-in duration-500' 
         : 'fixed left-[-100%] top-0 p-10 ease-in duration-500'}>
                 <div className="flex w-full items-center justify-between">
+                    <Link href='/'>
+
                     <Image
                     src="/../public/assets/Tor-logo.png"
                     width="85"
                     height="35"
                     alt="/"
                     />
+                    </Link>
                     <div onClick={toggleNav} className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer">
                     <AiOutlineClose />
                     </div>
@@ -92,19 +96,19 @@ const toggleNav= ()=> {
                                     <div className="py-4 flex-col">
                                         <ul>
                                         <Link href="/#home">
-                                            <li className="py-4 text sm">Home</li>
+                                            <li onClick={() => setNav(false)} className="py-4 text sm">Home</li>
                                         </Link>
                                         <Link href="/#about-me">
-                                            <li className="py-4 text sm">About</li>
+                                            <li onClick={() => setNav(false)} className="py-4 text sm">About</li>
                                         </Link>
-                                        <Link href="/skills">
-                                            <li className="py-4 text sm">Skills</li>
+                                        <Link href="/#skills">
+                                            <li onClick={() => setNav(false)} className="py-4 text sm">Skills</li>
                                         </Link>
                                         <Link href="/#projects">
-                                            <li className="py-4 text sm">Projects</li>
+                                            <li  onClick={() => setNav(false)} className="py-4 text sm">Projects</li>
                                         </Link>
                                         <Link href="/#contact">
-                                            <li className="py-4 text sm">Contact</li>
+                                            <li onClick={() => setNav(false)} className="py-4 text sm">Contact</li>
                                         </Link>
                                         </ul>
                                         <div className="pt-40">

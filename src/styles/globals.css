@@ -7,6 +7,8 @@ html {
   scroll-behavior: smooth!important;
   }
 
+ 
+
 @layer base {
     /* Global styling for entire app */
   body {
@@ -35,6 +37,14 @@ html {
     @apply shadow-xl shadow-gray-400 rounded-xl uppercase bg-gradient-to-r from-[#855696] to-[#9612f5] text-white
   }
 
-  
+ 
+}
+
+@layer components {
+
+  .map-container {
+    height: 100%;
+    width: 100vh;
+  }
   
 }

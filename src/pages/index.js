@@ -32,7 +32,7 @@ export default function Home() {
       <SkillsList />
       <Projects />
       <Contact />
-      <Map center={center} zoom={zoom} />
+      <Map  />
     </>
   )
 }
