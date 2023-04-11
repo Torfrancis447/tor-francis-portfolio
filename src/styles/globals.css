@@ -13,7 +13,7 @@ html {
     /* Global styling for entire app */
   body {
     /* use [] for custom values */
-    @apply bg-[#ecf0f3] text-[#1f2937] tracking-wide 
+    @apply dark:bg-[#171923] dark:text-[#ecf0f3] bg-[#ecf0f3] text-[#1f2937] tracking-wide 
     
   }
 
@@ -37,14 +37,22 @@ html {
     @apply shadow-xl shadow-gray-400 rounded-xl uppercase bg-gradient-to-r from-[#855696] to-[#9612f5] text-white
   }
 
+
  
 }
 
-@layer components {
+@layer utilities {
 
-  .map-container {
-    height: 100%;
-    width: 100vh;
-  }
-  
+
+
+
+
 }
+
+
+
+  
+  
+  
+  
+  

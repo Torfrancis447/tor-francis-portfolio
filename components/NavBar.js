@@ -27,11 +27,11 @@ const NavBar = () => {
     <div
       className={
         shadow
-          ? "fixed w-full h-20 shadow-xl z-[100] ease-in duration-300"
-          : "fixed w-full h-20 z-[100] ease-out duration-300"
+          ? "fixed w-full h-20 dark:shadow-none shadow-xl z-[100] linear duration-100 dark:bg-[#171923] bg-[#ecf0f3]"
+          : "fixed w-full h-20 z-[100] linear duration-100 dark:bg-[#171923] bg-[#ecf0f3]"
       }
     >
-      <div className="flex justify-between items-center w-full h-full px-2 2xl:px-16 bg-[#ecf0f3]">
+      <div className="flex justify-between items-center w-full h-full px-2 2xl:px-16 z-[100]">
         <Image
           src="/../public/assets/Tor-logo.png"
           alt="/"
