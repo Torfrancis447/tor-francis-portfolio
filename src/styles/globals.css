@@ -11,7 +11,7 @@ html {
 
 @layer base {
     /* Global styling for entire app */
-  body {
+   body {
     /* use [] for custom values */
     @apply dark:bg-[#171923] dark:text-[#ecf0f3] bg-[#ecf0f3] text-[#1f2937] tracking-wide 
     
@@ -34,7 +34,7 @@ html {
   }
 
   button {
-    @apply shadow-xl shadow-gray-400 rounded-xl uppercase bg-gradient-to-r from-[#855696] to-[#9612f5] text-white
+    @apply dark:shadow-none shadow-xl shadow-gray-400 rounded-xl uppercase bg-gradient-to-r from-[#855696] to-[#9612f5] text-white
   }
 
 

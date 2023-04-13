@@ -2,10 +2,10 @@ import Image from "next/image";
 import Link from "next/link";
 import React, { useEffect, useState } from "react";
 import { AiOutlineClose, AiOutlineMail, AiOutlineMenu } from "react-icons/ai";
-import { FaGithub, FaLinkedinIn } from "react-icons/fa";
-import { BsFillPersonLinesFill } from "react-icons/bs";
+import { FaGithub, FaLinkedinIn, FaDev } from "react-icons/fa";
+import { HiOutlineMailOpen, HiOutlineMail } from "react-icons/hi";
 
-const NavBar = () => {
+const NavBar = ({handleClick, isClicked}) => {
   const [nav, setNav] = useState(false);
   const [shadow, setShadow] = useState(false);
 
@@ -68,13 +68,13 @@ const NavBar = () => {
 
       <div
         className={
-          nav ? "md:hidden fixed left-0 top-0 w-full h-screen bg-black/60" : ""
+          nav ? "md:hidden fixed left-0 top-0 w-full h-screen bg-black/60 dark:bg-black/50" : ""
         }
       >
         <div
           className={
             nav
-              ? "fixed left-0 top-0 lg:w-[35%] sm:w-[60%] md:w-[45%] h-screen bg-[#ecf0f3] p-10 ease-in duration-500"
+              ? "fixed left-0 top-0 lg:w-[35%] sm:w-[60%] md:w-[45%] h-screen bg-[#ecf0f3] dark:bg-[#171923] p-10 ease-in duration-500"
               : "fixed left-[-100%] top-0 p-10 ease-in duration-500"
           }
         >
@@ -89,7 +89,7 @@ const NavBar = () => {
             </Link>
             <div
               onClick={toggleNav}
-              className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer"
+              className="rounded-full dark:shadow-none shadow-lg shadow-gray-400 p-3 cursor-pointer dark:bg-[#1f2937]"
             >
               <AiOutlineClose />
             </div>
@@ -127,23 +127,31 @@ const NavBar = () => {
                 </li>
               </Link>
             </ul>
-            <div className="pt-40">
-              <p className="uppercase tracking-widest text-[#5651e5]">
+            <div className="pt-40 ">
+              <p className="uppercase tracking-widest text-[#236094] dark:text-[#8b8bff]">
                 {`Let's Connect`}
               </p>
               <div className="flex items-center justify-between my-4 w-full sm:w-[80%]">
-                <div className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300">
-                  <FaLinkedinIn />
-                </div>
-                <div className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300">
-                  <FaGithub />
-                </div>
-                <div className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300">
-                  <AiOutlineMail />
-                </div>
-                <div className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300">
-                  <BsFillPersonLinesFill />
-                </div>
+              <div className="rounded-full shadow-xl dark:shadow-none shadow-gray-400 p-6 cursor-pointer dark:bg-[#1f2937] hover:scale-110 ease-in duration-300">
+              <a href="https://www.linkedin.com/in/tor-francis/" target="_blank" rel="noopener noreferrer">
+              <FaLinkedinIn className="dark:text-white"/>
+              </a>
+            </div>
+            <div className="rounded-full shadow-xl dark:shadow-none shadow-gray-400 p-6  cursor-pointer dark:bg-[#1f2937] hover:scale-110 ease-in duration-300">
+            <a href="https://github.com/Torfrancis447" target="_blank" rel="noopener noreferrer">
+              <FaGithub className="dark:text-white" />
+              </a>
+            </div>
+            <div onClick={handleClick} className="rounded-full shadow-xl dark:shadow-none  shadow-gray-400 p-6 cursor-pointer dark:bg-[#1f2937] hover:scale-110 ease-in duration-300">
+              <a href='mailto:torfrancis447@gmail.com' title="email">
+              {isClicked ? <HiOutlineMailOpen className="dark:text-white" /> : <HiOutlineMail className="dark:text-white" /> }
+              </a>
+            </div>
+            <div className="rounded-full shadow-xl dark:shadow-none shadow-gray-400 p-6 cursor-pointer dark:bg-[#1f2937]  hover:scale-110 ease-in duration-300">
+            <a href="https://dev.to/torfrancis447" target="_blank" rel="noopener noreferrer">
+              <FaDev />
+              </a>
+            </div>
               </div>
             </div>
           </div>

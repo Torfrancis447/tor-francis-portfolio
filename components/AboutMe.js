@@ -10,7 +10,7 @@ const AboutMe = () => {
     >
       <div className="max-w-[1248px] m-auto md:grid grid-cols-3 gap-8">
         <div className="col-span-2">
-          <p className="uppercase text-xl tracking-widest test-[#5651e5]">
+          <p className="uppercase text-xl tracking-widest text-[#236094] dark:text-[#8b8bff]">
             {" "}
             About{" "}
           </p>
@@ -34,11 +34,11 @@ const AboutMe = () => {
             spend time with my cat. If my cat isn't in the mood, then I tend to
             go exploring the city with friends.`}
           </p>
-          <p className="py-2 text-gray-600 underline cursor-pointer">
+          {/* <p className="py-2 text-gray-600 underline cursor-pointer">
             Check out new Projects
-          </p>
+          </p> */}
         </div>
-        <div className="w-full h-auto m-auto shadow-xl shadow-gray-400 rounded-xl flex items-center justify-center p-4 hover:scale-105 ease-in duration-300">
+        <div className="w-full h-auto m-auto dark:shadow-none shadow-xl shadow-gray-400 rounded-xl flex items-center justify-center p-4 hover:scale-105 ease-in duration-300">
           <Image className="rounded xl" src={coverPhoto} alt="/" />
         </div>
       </div>
