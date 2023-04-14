@@ -7,6 +7,7 @@ const Map = () => {
   const mapContainer = useRef(null);
 
   useEffect(() => {
+    if(!map) return 
     mapboxgl.accessToken = process.env.NEXT_PUBLIC_MAPBOX_GL_ACCESS_TOKEN ;
     map.current = new mapboxgl.Map({
       container: mapContainer.current,
@@ -14,11 +15,7 @@ const Map = () => {
       center: [-75.1652, 39.9526],
       zoom: 10.5
     });
-
-    
-    return () => {
-      map.current.remove();
-    };
+    new mapboxgl.Marker().setLngLat([-75.1652, 39.9526]).addTo(map.current)
 
   }, []);
 

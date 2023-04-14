@@ -1,10 +1,11 @@
 import Image from "next/image";
 import Link from "next/link";
 import React, { useEffect, useState } from "react";
-import { AiOutlineClose, AiOutlineMail, AiOutlineMenu } from "react-icons/ai";
+import { AiOutlineClose,  AiOutlineMenu } from "react-icons/ai";
 import { FaGithub, FaLinkedinIn, FaDev } from "react-icons/fa";
 import { HiOutlineMailOpen, HiOutlineMail } from "react-icons/hi";
 
+import { motion } from "framer-motion"
 const NavBar = ({handleClick, isClicked}) => {
   const [nav, setNav] = useState(false);
   const [shadow, setShadow] = useState(false);
@@ -31,14 +32,42 @@ const NavBar = ({handleClick, isClicked}) => {
           : "fixed w-full h-20 z-[100] linear duration-100 dark:bg-[#171923] bg-[#ecf0f3]"
       }
     >
-      <div className="flex justify-between items-center w-full h-full px-2 2xl:px-16 z-[100]">
-        <Image
-          src="/../public/assets/Tor-logo.png"
+      <div className="flex bg-transparent justify-between items-center w-full h-full px-2 2xl:px-16 z-[100]">
+        {/* <Image
+          src={logo}
           alt="/"
           width="125"
           height="50"
-        />
-        <div>
+          
+        /> */}
+        <motion.div  initial={{
+          x: -500,
+          opacity: 0,
+          scale: 0.5
+        }}
+        animate={{
+          x: 0,
+          opacity: 1,
+          scale: 1
+        }}
+        transition={{duration: 1.5}}>
+          <h1>T|F</h1>
+        </motion.div>
+        
+        <motion.div  initial={{
+          x: 500,
+          opacity: 0,
+          scale: 0.5
+        }}
+        animate={{
+          x: 0,
+          opacity: 1,
+          scale: 1
+        }}
+        transition={{
+          duration: 1.5
+        }}>
+        
           <ul className="hidden md:flex">
             <Link href="/#home">
               <li className="ml-10 text-sm uppercase hover:border-b">Home</li>
@@ -63,7 +92,7 @@ const NavBar = ({handleClick, isClicked}) => {
           <div onClick={toggleNav} className="md:hidden pr-2">
             <AiOutlineMenu size={25} />
           </div>
-        </div>
+        </motion.div>
       </div>
 
       <div

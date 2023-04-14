@@ -34,7 +34,7 @@ export default function Home() {
       <AboutMe />
       <SkillsList />
       <Projects />
-      <Contact />      
+      <Contact isClicked={isClicked} handleClick={handleClick} />      
     </>
   )
 }
