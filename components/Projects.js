@@ -1,6 +1,7 @@
 import Image from "next/image";
 import React from "react";
 import devHunt from "../public/assets/dev_hunt.png";
+import gamersParadise from "../public/assets/Gamers-Paradise.png"
 import Link from "next/link";
 import ProjectCard from "./ProjectCard";
 const Projects = () => {
@@ -15,23 +16,23 @@ const Projects = () => {
           <ProjectCard
             projectImage={devHunt}
             projectName="Dev Hunt"
-            projectUrl="/property"
+            projectUrl="/"
+          />
+          <ProjectCard
+            projectImage={gamersParadise}
+            projectName="Gamer's Pardise"
+            projectUrl="/"
+          />
+          {/* <ProjectCard
+            projectImage={devHunt}
+            projectName="Dev Hunt"
+            projectUrl="/"
           />
           <ProjectCard
             projectImage={devHunt}
             projectName="Dev Hunt"
-            projectUrl="/property"
-          />
-          <ProjectCard
-            projectImage={devHunt}
-            projectName="Dev Hunt"
-            projectUrl="/property"
-          />
-          <ProjectCard
-            projectImage={devHunt}
-            projectName="Dev Hunt"
-            projectUrl="/property"
-          />
+            projectUrl="/"
+          /> */}
         </div>
       </div>
     </div>

@@ -17,9 +17,10 @@ const ProjectCard = ({ projectName, projectImage, projectUrl }) => {
         <p className="pb-4 pt-2 text-white text center">React JS</p>
         <Link href={projectUrl}>
           <p className="text-center py-3 rounded-lg bg-white text-gray-700 font-bold text-lg cursor-pointer">
-            View
+           <a href="https://main--gamers-paradise-tf.netlify.app/">View</a>
           </p>
         </Link>
+        
       </div>
     </div>
   );
