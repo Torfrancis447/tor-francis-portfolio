@@ -109,12 +109,7 @@ const NavBar = ({handleClick, isClicked}) => {
         >
           <div className="flex w-full items-center justify-between">
             <Link href="/">
-              <Image
-                src="/../public/assets/Tor-logo.png"
-                width="85"
-                height="35"
-                alt="/"
-              />
+            <h1>T|F</h1>
             </Link>
             <div
               onClick={toggleNav}

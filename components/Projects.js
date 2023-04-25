@@ -5,6 +5,8 @@ import gamersParadise from "../public/assets/Gamers-Paradise.png"
 import Link from "next/link";
 import ProjectCard from "./ProjectCard";
 const Projects = () => {
+
+
   return (
     <div id="projects" className="w-full ">
       <div className="max-w-[1240px] mx-auto px-2 py-16">
@@ -16,12 +18,12 @@ const Projects = () => {
           <ProjectCard
             projectImage={devHunt}
             projectName="Dev Hunt"
-            projectUrl="/"
+            projectUrl="https://github.com/Torfrancis447/dev-hunt-front-end"
           />
           <ProjectCard
             projectImage={gamersParadise}
             projectName="Gamer's Pardise"
-            projectUrl="/"
+            projectUrl="https://gamers-paradise-tf.netlify.app/"
           />
           {/* <ProjectCard
             projectImage={devHunt}
