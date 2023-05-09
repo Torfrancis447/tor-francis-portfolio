@@ -21,9 +21,9 @@ const ProjectCard = ({ projectName, projectImage, projectUrl }) => {
            View
           </p>
         </Link>
-        
       </div>
     </div>
+     
   );
 };
 

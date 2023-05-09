@@ -1,7 +1,7 @@
 
 import Link from "next/link";
 import React from "react";
-
+import TitleRevealer from "./animation/TitleRevealer";
 import { FaGithub, FaLinkedinIn, FaDev } from "react-icons/fa";
 import {
   HiOutlineChevronDoubleUp,
@@ -13,10 +13,14 @@ const Contact = ({isClicked, handleClick }) => {
   return (
     <div id="contact" className="w-full lg:h-screen">
       <div className="max-w-[1248px] m-auto px-2 py-16 w-full">
+      <TitleRevealer>
         <p className="text-xl tracking-widest uppercase text-[#236094] dark:text-[#8b8bff]">
           Contact
         </p>
+        </TitleRevealer>
+        <TitleRevealer>
         <h2 className="py-4">Get in Touch</h2>
+        </TitleRevealer>
         <div className="grid lg:grid-cols-5 gap-8">
           {/* left */}
           <div className="col-span-3 lg:col-span-2 w-full h-full shadow-xl dark:shadow-none dark:bg-[#1f2937] shadow-gray-400 rounded-xl p-4 ">

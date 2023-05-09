@@ -1,7 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import coverPhoto from "../public/assets/T-Francis-54.jpg";
-
+import TitleRevealer from "./animation/TitleRevealer";
 const AboutMe = () => {
   return (
     <div
@@ -10,16 +10,23 @@ const AboutMe = () => {
     >
       <div className="max-w-[1248px] m-auto md:grid grid-cols-3 gap-8">
         <div className="col-span-2">
+        <TitleRevealer>
           <p className="uppercase text-xl tracking-widest text-[#236094] dark:text-[#8b8bff]">
             {" "}
             About{" "}
           </p>
+          </TitleRevealer>
+          <TitleRevealer>
           <h2 className="py-4">Who I Am</h2>
+          </TitleRevealer>
+          
           <p className="py-2 text-gray-600 dark:text-gray-400">
             Full-stack Developer that enjoys creatively solving problems and
             constantly learning new skills with the ultimate goal of making an
             impact on how we interact with technologies.
           </p>
+          
+          
           <p className="py-2 text-gray-600 dark:text-gray-400">
             {`My Technical Skills Include React, Ruby on Rails, Javascript, HTML,
             CSS, and SQL. I have built projects with Material UI, Tailwind CSS,
@@ -29,11 +36,14 @@ const AboutMe = () => {
             and patient individual that's well-versed in team collaboration and
             effective communication.`}
           </p>
+          
+          
           <p className="py-2 text-gray-600 dark:text-gray-400">
             {`When I'm not coding, I prefer to research new technologies and
             spend time with my cat. If my cat isn't in the mood, then I tend to
             go exploring the city with friends.`}
           </p>
+          
           {/* <p className="py-2 text-gray-600 underline cursor-pointer">
             Check out new Projects
           </p> */}

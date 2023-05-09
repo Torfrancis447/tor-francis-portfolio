@@ -1,5 +1,5 @@
 import React, {useState} from "react";
-
+import ResumeButton from "./ResumeButton";
 import { FaGithub, FaLinkedinIn, FaDev } from "react-icons/fa";
 import {HiOutlineMail, HiOutlineMailOpen } from "react-icons/hi"
 
@@ -15,9 +15,7 @@ export const Main = ({isClicked, handleClick}) => {
             {"<Hello World />"}{" "}
           </p>
           <div className="flex items-center justify-center">
-          <h1 className="py-4 text-gray-700 dark:text-gray-300">
-            
-          </h1>
+         
           <h1 className="py-4 text-transparent bg-gradient-to-r from-green-400 via-blue-600 to-pink-500 bg-clip-text animate-gradient">  Hi , I'm Tor Francis</h1>
           </div>
           <h1 className="py-2"> A Full-Stack Web Developer </h1>
@@ -28,6 +26,9 @@ export const Main = ({isClicked, handleClick}) => {
             to provide excellent end-users experience with years of experience
             in sales and team management.
           </p>
+           {/* <div className="py-4 justify-center flex items-center text-gray-700 dark:text-gray-300">
+            <ResumeButton />
+          </div> */}
           <div className="flex items-center justify-between max-w-[330px] m-auto py-4">
             <div className="rounded-full shadow-xl dark:shadow-none shadow-gray-400 p-6 cursor-pointer dark:bg-[#1f2937] hover:scale-110 ease-in duration-300">
               <a href="https://www.linkedin.com/in/tor-francis/" target="_blank" rel="noopener noreferrer">

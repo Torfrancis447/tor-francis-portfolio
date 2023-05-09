@@ -9,14 +9,21 @@ import nextjs from "../public/assets/nextjs-boilerplate-logo.png"
 import tailwind from "../public/assets/Tailwind_CSS_Logo.svg.png"
 import postgres from "../public/assets/Postgresql_elephant.svg.png"
 import css from "../public/assets/icons8-css3-480.png"
+import Revealer from "./animation/Revealer";
+import TitleRevealer from "./animation/TitleRevealer";
+
 const SkillsList = () => {
   return (
     <div id="skills" className="w-full md:h-screen p-2 ">
       <div className="max-w-[1240px] mx-auto flex flex-col justify-center h-full">
+      <TitleRevealer>
         <p className="text-xl tracking-widest uppercase text-[#236094] dark:text-[#8b8bff]">
           Skills
         </p>
+        </TitleRevealer>
+        <TitleRevealer>
         <h2 className="py-4 dark:text-gray-300"> What I have worked with</h2>
+        </TitleRevealer>
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
           <SkillCard
             imageSrc={javaScript}

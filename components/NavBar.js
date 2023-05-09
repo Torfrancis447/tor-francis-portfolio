@@ -40,7 +40,7 @@ const NavBar = ({handleClick, isClicked}) => {
           height="50"
           
         /> */}
-        <motion.div  initial={{
+        <motion.div initial={{
           x: -500,
           opacity: 0,
           scale: 0.5
@@ -50,7 +50,7 @@ const NavBar = ({handleClick, isClicked}) => {
           opacity: 1,
           scale: 1
         }}
-        transition={{duration: 1.5}}>
+        transition={{duration: 1.0}}>
           <h1>T|F</h1>
         </motion.div>
         
@@ -65,7 +65,7 @@ const NavBar = ({handleClick, isClicked}) => {
           scale: 1
         }}
         transition={{
-          duration: 1.5
+          duration: 1.0
         }}>
         
           <ul className="hidden md:flex">

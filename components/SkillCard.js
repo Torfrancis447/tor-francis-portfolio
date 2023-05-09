@@ -1,6 +1,7 @@
 import React from "react";
 import Image from "next/image";
 
+
 function SkillCard({ imageSrc, title }) {
   return (
     <div className="p-6 dark:shadow-none dark:bg-[#1f2937] shadow-xl rounded-xl hover:scale-105 ease-in duration-300">

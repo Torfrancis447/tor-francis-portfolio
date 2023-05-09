@@ -4,16 +4,22 @@ import devHunt from "../public/assets/dev_hunt.png";
 import gamersParadise from "../public/assets/Gamers-Paradise.png"
 import Link from "next/link";
 import ProjectCard from "./ProjectCard";
+import TitleRevealer from "./animation/TitleRevealer";
+
 const Projects = () => {
 
 
   return (
     <div id="projects" className="w-full ">
       <div className="max-w-[1240px] mx-auto px-2 py-16">
+      <TitleRevealer>
         <p className="text-xl tracking-widest uppercase text-[#236094] dark:text-[#8b8bff]">
           Projects
         </p>
+        </TitleRevealer>
+        <TitleRevealer>
         <h2 className="py-4"> What I've Built </h2>
+        </TitleRevealer>
         <div className="grid md:grid-cols-2 gap-8">
           <ProjectCard
             projectImage={devHunt}
@@ -38,6 +44,7 @@ const Projects = () => {
         </div>
       </div>
     </div>
+    
   );
 };
 
