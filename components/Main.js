@@ -26,9 +26,9 @@ export const Main = ({isClicked, handleClick}) => {
             to provide excellent end-users experience with years of experience
             in sales and team management.
           </p>
-           {/* <div className="py-4 justify-center flex items-center text-gray-700 dark:text-gray-300">
+           <div className="py-4 justify-center flex items-center text-gray-700 dark:text-gray-300 overflow-hidden">
             <ResumeButton />
-          </div> */}
+          </div>
           <div className="flex items-center justify-between max-w-[330px] m-auto py-4">
             <div className="rounded-full shadow-xl dark:shadow-none shadow-gray-400 p-6 cursor-pointer dark:bg-[#1f2937] hover:scale-110 ease-in duration-300">
               <a href="https://www.linkedin.com/in/tor-francis/" target="_blank" rel="noopener noreferrer">

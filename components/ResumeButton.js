@@ -7,16 +7,30 @@ const ResumeButton = () => {
 
 
     return (
-  
+
         <motion.button
-            
-            href=""
-            className="text-white font-bold py-2 px-4 "
-            download
+            className="text-white font-bold py-2 px-4"
+            initial={{
+                y: 500,
+                opacity: 0,
+                scale: 0.0
+            }}
+            animate={{
+                y: 0,
+                opacity: 1,
+                scale: 1
+            }}
+            transition={{ duration: 1.0 }}
         >
-                Download Resume 
+            <a
+                target="_blank"
+                rel="noopener noreferrer"
+                href="public/tor-francis-resume.pdf"
+                className="text-white font-bold py-2 px-4 "
+                download
+            >Download Resume</a>
         </motion.button>
-    
+
     );
 };
 
