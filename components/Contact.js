@@ -11,8 +11,8 @@ import {
 import Map from "./Map";
 const Contact = ({isClicked, handleClick }) => {
   return (
-    <div id="contact" className="w-full lg:h-screen">
-      <div className="max-w-[1248px] m-auto px-2 py-16 w-full">
+    <div id="contact" className="w-full lg:h-screen  dark:text-[#ecf0f3]">
+      <div className="max-w-[1248px] m-auto px-2 dark:bg-[#171923] py-16 w-full">
       <TitleRevealer>
         <p className="text-xl tracking-widest uppercase text-[#236094] dark:text-[#8b8bff]">
           Contact

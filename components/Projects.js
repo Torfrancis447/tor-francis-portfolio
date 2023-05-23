@@ -10,7 +10,7 @@ const Projects = () => {
 
 
   return (
-    <div id="projects" className="w-full ">
+    <div id="projects" className="w-full dark:bg-[#171923] dark:text-[#ecf0f3]">
       <div className="max-w-[1240px] mx-auto px-2 py-16">
       <TitleRevealer>
         <p className="text-xl tracking-widest uppercase text-[#236094] dark:text-[#8b8bff]">

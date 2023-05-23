@@ -3,12 +3,13 @@ import ResumeButton from "./ResumeButton";
 import { FaGithub, FaLinkedinIn, FaDev } from "react-icons/fa";
 import {HiOutlineMail, HiOutlineMailOpen } from "react-icons/hi"
 
+
 export const Main = ({isClicked, handleClick}) => {
   
 
   return (
     <div id="home" className="w-full h-screen text-center">
-      <div className="max-w-[1240px] w-full h-full mx-auto p-2 flex justify-center items-center">
+      <div className="max-w-[1240px] dark:bg-[#171923] dark:text-[#ecf0f3] w-full h-full mx-auto p-2 flex justify-center items-center">
         <div>
           <p className="uppercase text-sm tracking-widest text-gray-600 dark:text-gray-400">
             {" "}
@@ -27,6 +28,7 @@ export const Main = ({isClicked, handleClick}) => {
             in sales and team management.
           </p>
            <div className="py-4 justify-center flex items-center text-gray-700 dark:text-gray-300 overflow-hidden">
+           
             <ResumeButton />
           </div>
           <div className="flex items-center justify-between max-w-[330px] m-auto py-4">

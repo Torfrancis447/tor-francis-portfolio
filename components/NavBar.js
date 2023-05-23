@@ -6,6 +6,7 @@ import { FaGithub, FaLinkedinIn, FaDev } from "react-icons/fa";
 import { HiOutlineMailOpen, HiOutlineMail } from "react-icons/hi";
 
 import { motion } from "framer-motion"
+import ColorModeButton from "./ColorModeButton";
 const NavBar = ({handleClick, isClicked}) => {
   const [nav, setNav] = useState(false);
   const [shadow, setShadow] = useState(false);
@@ -32,7 +33,7 @@ const NavBar = ({handleClick, isClicked}) => {
           : "fixed w-full h-20 z-[100] linear duration-100 dark:bg-[#171923] bg-[#ecf0f3]"
       }
     >
-      <div className="flex bg-transparent justify-between items-center w-full h-full px-2 2xl:px-16 z-[100]">
+      <div className="flex dark:bg-[#171923] dark:text-[#ecf0f3] bg-transparent justify-between items-center w-full h-full px-2 2xl:px-16 z-[100]">
         {/* <Image
           src={logo}
           alt="/"
@@ -51,7 +52,7 @@ const NavBar = ({handleClick, isClicked}) => {
           scale: 1
         }}
         transition={{duration: 1.0}}>
-          <h1>T|F</h1>
+          <h1 >T|F</h1>
         </motion.div>
         
         <motion.div  initial={{
@@ -88,6 +89,9 @@ const NavBar = ({handleClick, isClicked}) => {
                 Contact
               </li>
             </Link>
+            <div className="ml-10 text-sm uppercase hover:border-b">
+            <ColorModeButton />
+            </div>
           </ul>
           <div onClick={toggleNav} className="md:hidden pr-2">
             <AiOutlineMenu size={25} />

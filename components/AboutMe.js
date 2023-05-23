@@ -2,11 +2,12 @@ import React from "react";
 import Image from "next/image";
 import coverPhoto from "../public/assets/T-Francis-54.jpg";
 import TitleRevealer from "./animation/TitleRevealer";
+
 const AboutMe = () => {
   return (
     <div
       id="about-me"
-      className="w-full md:h-screen p-2 flex items-center py-16"
+      className="dark:bg-[#171923] dark:text-[#ecf0f3] w-full md:h-screen p-2 flex items-center py-16"
     >
       <div className="max-w-[1248px] m-auto md:grid grid-cols-3 gap-8">
         <div className="col-span-2">

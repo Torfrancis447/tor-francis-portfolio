@@ -14,7 +14,7 @@ import TitleRevealer from "./animation/TitleRevealer";
 
 const SkillsList = () => {
   return (
-    <div id="skills" className="w-full md:h-screen p-2 ">
+    <div id="skills" className="w-full md:h-screen p-2 dark:bg-[#171923] dark:text-[#ecf0f3]">
       <div className="max-w-[1240px] mx-auto flex flex-col justify-center h-full">
       <TitleRevealer>
         <p className="text-xl tracking-widest uppercase text-[#236094] dark:text-[#8b8bff]">

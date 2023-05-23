@@ -34,7 +34,7 @@ html {
   }
 
   button {
-    @apply dark:shadow-none shadow-xl shadow-gray-400 rounded-xl uppercase bg-gradient-to-r from-[#855696] to-[#9612f5] text-white
+    @apply dark:shadow-none shadow-lg shadow-gray-400 rounded-xl uppercase bg-gradient-to-r from-[#855696] to-[#9612f5] text-white
   }
 
 
