@@ -25,7 +25,7 @@ const ResumeButton = () => {
             <a
                 target="_blank"
                 rel="noopener noreferrer"
-                href="public/tor-francis-resume.pdf"
+                href="public/tor-francis-resume-2024.pdf"
                 className="text-white font-bold py-2 px-4 "
                 download
             >Download Resume</a>

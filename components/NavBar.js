@@ -71,25 +71,25 @@ const NavBar = ({handleClick, isClicked}) => {
         
           <ul className="hidden md:flex">
             <Link href="/#home">
-              <li className="ml-10 text-sm uppercase hover:border-b">Home</li>
+              <li className="ml-10 text-sm uppercase hover:border-b hover:border-b-[#1f2937] dark:hover:border-b-white">Home</li>
             </Link>
             <Link href="/#about-me">
-              <li className="ml-10 text-sm uppercase hover:border-b">About</li>
+              <li className="ml-10 text-sm uppercase hover:border-b hover:border-b-[#1f2937] dark:hover:border-b-white">About</li>
             </Link>
             <Link href="/#skills">
-              <li className="ml-10 text-sm uppercase hover:border-b">Skills</li>
+              <li className="ml-10 text-sm uppercase hover:border-b hover:border-b-[#1f2937] dark:hover:border-b-white">Skills</li>
             </Link>
             <Link href="#projects">
-              <li className="ml-10 text-sm uppercase hover:border-b">
+              <li className="ml-10 text-sm uppercase hover:border-b hover:border-b-[#1f2937] dark:hover:border-b-white">
                 Projects
               </li>
             </Link>
             <Link href="#contact">
-              <li className="ml-10 text-sm uppercase hover:border-b">
+              <li className="ml-10 text-sm uppercase hover:border-b hover:border-b-[#1f2937] dark:hover:border-b-white">
                 Contact
               </li>
             </Link>
-            <div className="ml-10 text-sm uppercase hover:border-b">
+            <div className="ml-10 text-sm uppercase ">
             <ColorModeButton />
             </div>
           </ul>
